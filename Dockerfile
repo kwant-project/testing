@@ -13,7 +13,11 @@ RUN echo "deb-src http://httpredir.debian.org/debian/ jessie main"\
         # all the hard Python dependencies -- numpy needs to be installed
         # for building the scipy wheels
         python-all-dev python-setuptools python-pip python-tk python-wheel python-numpy\
-        python3-all-dev python3-setuptools python3-pip python3-tk python3-wheel python3-numpy
+        python3-all-dev python3-setuptools python3-pip python3-tk python3-wheel python3-numpy\
+        # Additional tools for running CI
+        file rsync openssh-client\
+    && apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 ### install testing dependencies
 # python 3
