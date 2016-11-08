@@ -10,7 +10,7 @@ RUN echo "deb-src http://httpredir.debian.org/debian/ jessie main" \
         libmumps-scotch-dev pkg-config libfreetype6-dev \
         # all the hard Python dependencies
         python3-all-dev python3-setuptools python3-pip python3-tk python3-wheel \
-        python3-numpy python3-scipy python3-matplotlib \
+        cython3 python3-numpy python3-scipy python3-matplotlib \
         # Additional tools for running CI
         file rsync openssh-client \
     && apt-get clean && \
@@ -18,7 +18,6 @@ RUN echo "deb-src http://httpredir.debian.org/debian/ jessie main" \
 
 ### install build and testing dependencies
 RUN pip3 install \
-      cython==0.22 \
       pytest>=2.6.3\
       pytest-runner>=2.7 \
       pytest-cov \
