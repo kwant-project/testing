@@ -9,8 +9,6 @@ RUN echo "deb-src http://httpredir.debian.org/debian/ jessie main" \
         git g++ make patch gfortran libblas-dev liblapack-dev \
         libmumps-scotch-dev pkg-config libfreetype6-dev \
         # all the hard Python dependencies
-        python-all-dev python-setuptools python-pip python-tk python-wheel \
-        python-numpy python-scipy python-matplotlib \
         python3-all-dev python3-setuptools python3-pip python3-tk python3-wheel \
         python3-numpy python3-scipy python3-matplotlib \
         # Additional tools for running CI
@@ -19,8 +17,7 @@ RUN echo "deb-src http://httpredir.debian.org/debian/ jessie main" \
     rm -rf /var/lib/apt/lists/*
 
 ### install build and testing dependencies
-RUN for PIP in pip2 pip3 \
-    ; do $PIP install \
+RUN pip3 install \
       cython==0.22 \
       pytest>=2.6.3\
       pytest-runner>=2.7 \
@@ -34,4 +31,3 @@ RUN for PIP in pip2 pip3 \
       # change this once tinyarray 1.2.0 is on PyPi / we have packages for it
       # tinyarray>=1.2.0a0 \
       git+https://gitlab.kwant-project.org/kwant/tinyarray.git@v1.2.0a1 \
-    ; done
