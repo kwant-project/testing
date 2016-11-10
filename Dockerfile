@@ -18,6 +18,7 @@ RUN echo "deb-src http://httpredir.debian.org/debian/ jessie main" \
 
 ### install build and testing dependencies
 RUN pip3 install \
+      cython==0.23 \
       pytest>=2.6.3\
       pytest-runner>=2.7 \
       pytest-cov \
