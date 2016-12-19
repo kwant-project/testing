@@ -1,10 +1,8 @@
 # Docker image for building and testing tkwant
-FROM ubuntu:14.04
+FROM debian:jessie
 MAINTAINER Kwant developers <authors@kwant-project.org>
 
-RUN echo "deb-src http://httpredir.debian.org/debian/ jessie main" \
-          >> /etc/apt/sources.list && \
-    apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y --no-install-recommends \
         # all the hard non-Python dependencies
         git g++ make patch gfortran libblas-dev liblapack-dev \
         libmumps-scotch-dev pkg-config libfreetype6-dev \
