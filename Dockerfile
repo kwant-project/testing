@@ -15,6 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     rm -rf /var/lib/apt/lists/*
 
 ### install build and testing dependencies
+RUN pip3 install -U pip
 RUN pip3 install \
       cython==0.25.1 \
       pytest>=2.6.3\
