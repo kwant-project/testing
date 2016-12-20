@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ### install build and testing dependencies
 RUN pip3 install \
-      cython==0.23 \
+      cython==0.25.1 \
       pytest>=2.6.3\
       pytest-runner>=2.7 \
       pytest-cov \
@@ -24,8 +24,8 @@ RUN pip3 install \
       pytest-pep8 \
       nose>=1.0\
       nose-cov \
-      sphinx \
-      requests>=2.12.4 \
+      sphinx==1.5.1 \
+      requests==2.12.4 \
       numpydoc \
       # change this once tinyarray 1.2.0 is on PyPi / we have packages for it
       # tinyarray>=1.2.0a0 \
