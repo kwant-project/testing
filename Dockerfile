@@ -25,6 +25,7 @@ RUN pip3 install \
       nose>=1.0\
       nose-cov \
       sphinx \
+      requests>=2.12.4 \
       numpydoc \
       # change this once tinyarray 1.2.0 is on PyPi / we have packages for it
       # tinyarray>=1.2.0a0 \
