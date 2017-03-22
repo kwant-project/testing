@@ -30,4 +30,4 @@ RUN pip3 install \
       numpydoc \
       # change this once tinyarray 1.2.0 is on PyPi / we have packages for it
       # tinyarray>=1.2.0a0 \
-      git+https://gitlab.kwant-project.org/kwant/tinyarray.git@v1.2.0a1 \
+      git+https://gitlab.kwant-project.org/kwant/tinyarray.git@master \
