@@ -2,6 +2,10 @@
 FROM debian:jessie
 MAINTAINER Kwant developers <authors@kwant-project.org>
 
+# make our environment sane
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
+
 RUN apt-get update && apt-get install -y --no-install-recommends \
         # all the hard non-Python dependencies
         git g++ make patch gfortran libblas-dev liblapack-dev \
