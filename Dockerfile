@@ -32,6 +32,4 @@ RUN pip3 install \
       "sphinx>=1.5.1" \
       "requests>=2.12.4" \
       numpydoc \
-      # change this once tinyarray 1.2.0 is on PyPi / we have packages for it
-      # tinyarray>=1.2.0a0 \
-      git+https://gitlab.kwant-project.org/kwant/tinyarray.git@master \
+      tinyarray>=1.2.0 \
