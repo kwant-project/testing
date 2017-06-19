@@ -27,6 +27,7 @@ RUN pip3 install \
       pytest-cov \
       pytest-flakes \
       pytest-pep8 \
+      pytest-warnings \
       "nose>=1.0"\
       nose-cov \
       "sphinx>=1.5.1" \
