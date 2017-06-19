@@ -29,7 +29,7 @@ RUN pip3 install \
       pytest-pep8 \
       "nose>=1.0"\
       nose-cov \
-      "sphinx>=1.5.1" \
+      "sphinx>=1.5.1,<1.6" \
       "requests>=2.12.4" \
       numpydoc \
       tinyarray>=1.2.0 \
