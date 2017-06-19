@@ -22,12 +22,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN pip3 install -U pip
 RUN pip3 install \
       "cython>=0.25.1" \
-      "pytest>=2.6.3"\
+      "pytest>=3"\
       "pytest-runner>=2.7" \
       pytest-cov \
       pytest-flakes \
       pytest-pep8 \
-      pytest-warnings \
       "nose>=1.0"\
       nose-cov \
       "sphinx>=1.5.1" \
