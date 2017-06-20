@@ -1,5 +1,5 @@
 # Docker image for building and testing tkwant
-FROM debian:jessie
+FROM ubuntu:16.04
 MAINTAINER Kwant developers <authors@kwant-project.org>
 
 # make our environment sane
