@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         libmumps-scotch-dev pkg-config libfreetype6-dev \
         # all the hard Python dependencies
         python3-all-dev python3-setuptools python3-pip python3-tk python3-wheel \
-        cython3 python3-numpy python3-scipy python3-matplotlib \
+        cython3 python3-numpy python3-scipy python3-matplotlib python3-sympy\
         # Additional tools for running CI
         file rsync openssh-client \
     && apt-get clean && \
