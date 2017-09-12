@@ -15,6 +15,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         cython3 python3-numpy python3-scipy python3-matplotlib python3-sympy\
         # Additional tools for running CI
         file rsync openssh-client \
+        # Doc-building tools
+        inkscape texlive-full \
     && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
