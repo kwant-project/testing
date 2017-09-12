@@ -23,7 +23,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ### install build and testing dependencies
 RUN pip3 install -U pip
 RUN pip3 install \
-      "cython>=0.25.1" \
+      "cython==0.25.2" \
       "pytest>=3"\
       "pytest-runner>=2.7" \
       pytest-cov \
