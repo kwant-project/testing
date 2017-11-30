@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         # Additional tools for running CI
         file rsync openssh-client \
         # Doc-building tools
-        inkscape texlive-full \
+        inkscape texlive-full zip \
     && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
