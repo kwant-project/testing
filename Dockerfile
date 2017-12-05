@@ -35,3 +35,4 @@ RUN pip3 install \
       "requests>=2.12.4" \
       numpydoc \
       tinyarray>=1.2.0 \
+      matplotlib>=2.0
