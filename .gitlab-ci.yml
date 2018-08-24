@@ -31,3 +31,11 @@ build conda:
       --context $CI_PROJECT_DIR
       --dockerfile $CI_PROJECT_DIR/Dockerfile.conda
       --destination $CI_REGISTRY_IMAGE/conda:$CI_REF
+
+build default:
+  stage: build
+  script:
+    - /kaniko/executor
+      --context $CI_PROJECT_DIR
+      --dockerfile $CI_PROJECT_DIR/Dockerfile.conda
+      --destination $CI_REGISTRY_IMAGE:$CI_REF
